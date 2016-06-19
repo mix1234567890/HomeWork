@@ -1,0 +1,18 @@
+.sv {
+	/* position:relative; */
+	width:50%;
+	margin: 0 auto;
+	}
+.face  {
+	text-align:center;
+	border-bottom: 1px solid grey;
+}
+h1 {
+	text-align:center;
+}
+.reason {
+	border-bottom: 1px solid grey;
+}
+.contact {
+	border-bottom: 1px solid grey;
+}
