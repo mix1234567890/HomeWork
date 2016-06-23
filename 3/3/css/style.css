@@ -1,9 +1,11 @@
 html, body {
 	height: 100%;
-	max-width:1100px
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 h1 {
-	margin: 30px;
+	margin: 20px 0px 20px 0px; 
 	font-size: 50px;
 	font-family: calibri;
 }
@@ -12,23 +14,28 @@ h1 {
 .hr  ul{
     margin: 0;
     padding: 5px;
+	box-sizing: border-box;
 }
 .hr  li{
-    display: inline; 
-    margin-right: 50px; 
-    padding: 25px; 
+
+	display: inline-block;
+	text-align: center;
+	line-height: 25px;
 	font-family: calibri;
 	font-size: 20px;
+	width: 250px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	box-sizing: border-box;
 }
 .hr li a{
-	text-decoration:none;
+	text-decoration: none;
 	color: white;
+	
 }
 .hr {
-	border: 1px solid #C0C0C0;
 	background-color: #444543;
-	margin:20px;
-	overflow:hidden;
+	overflow: hidden;
 }
 .hr a:link {
     color: white; 
@@ -36,71 +43,79 @@ h1 {
 }
 .hr a:hover {
     background: #383838; 
-    color:white; 
+    color: white; 
+	border-left: 1px solid white;
+	border-right: 1px solid white;
 }
 									/* --------позиционирование две колонки----------- */
 .main {
-	width:1000px;
+	width: 1000px;
 	margin: 20px;
 	position: relative;
 }
 .content {
 	float: right;
 	width: 660px; 
-	padding-bottom:30px;
+	padding-bottom: 30px;
 }
  img {
 	 border: 1px solid #C0C0C0;
-	 text-align:center;
-	 width:660px;
+	 text-align: center;
+	 width: 660px;
 }
 											/* -----------сайдбар------------------ */
 .sidebar {
 	float: left;
 	border: 1px solid #C0C0C0;
 	width: 264px; 
-	height:305px;
+	height: 305px;
 }											
 .sidebar li a{
-	text-decoration:none;
-	line-height:2.5;
-	color:black;
-	font-weight:lighter;
-	font-family:calibri;
-	display:block;
-	border-bottom:1px solid gray;
+	text-decoration: none;
+	line-height: 2.5;
+	color: black;
+	font-weight: lighter;
+	font-family: calibri;
+	display: block;
+	border-bottom: 1px solid gray;
+
 }
 .sidebar a:link {
     color: black;
-    padding:5px 50px 5px 50px;
+    padding: 5px 50px 5px 50px;
 }
 .sidebar a:hover {
     background: #F0FBFF; 
-    color:black; 
+    color: black; 
+	padding-left: 70px;
 }
 										/* -------------------футер-------------------- */
 .footer {
 	position: float;
-	bottom:-30px;
+	bottom: 0px;
 	border: 1px solid #C0C0C0;
 	background-color: #C0C0C0;
-	width:96%;
-	margin-left:20px;
+	width: 96%;
+	margin-left: 20px;
 	clear: right;
+	overflow:hidden;
 }
 .footer  ul{
     margin: 0;
     padding: 5px; 
 }
 .footer  li{
-    display: inline;
-    margin-right: 50px; 
-    padding: 25px; 
+    display: inline-block;
+	line-height: 10px;
+	width: 150px;
+	text-align: center;
 	font-family: calibri;
 	font-size: 20px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 }
 .footer li a{
-	text-decoration:none;
+	text-decoration: none;
 	color: black;
 }
 .footer a:link {
@@ -108,10 +123,11 @@ h1 {
     padding: 4px; 
 }
 .footer a:hover {
-    background: #383838; 
-    color:white; 
+    background: #808080; 
+    color: white; 
+	border-left: 1px solid white;
+	border-right: 1px solid white;
 }
 .footer .copy {
-	font-size:12px;
-	padding-left:300px;
+	padding-left: 150px;
 }
